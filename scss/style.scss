@@ -40,8 +40,8 @@ $quinary-color: #0D0D0D;
             .header-nav {
                 width: 100%; // Ocupa el ancho completo
                 height: auto; // Permite que la altura se ajuste
-                padding: 10px; // Reduce el padding
                 ul {
+                    padding-left: 0;
                     li {
                         width: 100%; // Aumenta el ancho de los enlaces
                         margin: 5px 0; // Ajusta el margen
@@ -79,8 +79,8 @@ $quinary-color: #0D0D0D;
             .header-nav {
                 width: 100%; // Ocupa el ancho completo
                 height: auto; // Permite que la altura se ajuste
-                padding: 10px; // Reduce el padding
                 ul {
+                    padding-left: 0;
                     li {
                         width: 100%; // Aumenta el ancho de los enlaces
                         margin: 5px 0; // Ajusta el margen
@@ -151,14 +151,14 @@ $quinary-color: #0D0D0D;
 }
 
 body {
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto', sans-serif;
 }
 
 .header-container{
     @include flexCenter(row, space-between, center);
     background-color: $quinary-color;
+    padding: 20px;
     .header-image{
-        padding: 20px;
         img{
             width: 200px;
             height: 200px;
@@ -174,7 +174,7 @@ body {
         border-radius: 19px;
         box-shadow: 5px 5px 10px rgba(217, 178, 106, 0.5);
         h1{
-            padding-top: 75px;
+            padding-top: 70px;
             text-align: center;
             color: #D9B26A;
         }
@@ -183,8 +183,6 @@ body {
         @include flexCenter(column, space-around, center);
         width: 200px;
         height: 200px;
-        padding-top: 5px;
-        padding-right: 10px;
         ul{
             list-style-type: none;
             li{
@@ -216,7 +214,8 @@ body {
 }
 @include mediaHeaderMobile(300px, 480px);
 @include mediaHeaderVertical(481px, 768px);
-@include mediaFooterHorizontal(769px, 1024px);
+@include mediaHeaderHorizontal(769px, 1024px);
+
 
 .footer-container{
     @include flexCenter(row, space-between, center);
@@ -241,6 +240,8 @@ body {
         }
     }
     @include mediaFooterMobile(300px, 480px);
+    @include mediaFooterVertical(481px, 768px);
+    @include mediaFooterHorizontal(769px, 1024px);
 }
 
 
