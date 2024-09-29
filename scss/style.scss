@@ -1,0 +1,248 @@
+$primary-color: #D9B26A;
+$secondary-color: #730202;
+$tertiary-color: #400101;
+$quaternary-color: #260101;
+$quinary-color: #0D0D0D;
+
+@mixin flexCenter ($direction, $content, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $content;
+    align-items: $align;
+}
+
+
+@mixin mediaHeaderMobile($min-width, $max-width) {
+    @media (min-width: $min-width) and (max-width: $max-width) {
+        .header-container {
+            @include flexCenter(column, center, center);
+            height: auto; // Permite que la altura se ajuste al contenido
+
+            .header-image {
+                padding: 10px; // Reduce el padding
+                img {
+                    width: 150px; // Reduce el tamaño de la imagen
+                    height: 150px; // Reduce la altura de la imagen
+                }
+            }
+
+            .header-titulo {
+                width: 90%; // Aumenta el ancho para que se ajuste a pantallas pequeñas
+                height: auto; // Permite que la altura se ajuste al contenido
+                background-image: none;
+                box-shadow: none;
+                h1 {
+                    padding-top: 20px; // Reduce el padding
+                    font-size: 1.0rem; // Ajusta el tamaño de fuente
+                }
+            }
+
+            .header-nav {
+                width: 100%; // Ocupa el ancho completo
+                height: auto; // Permite que la altura se ajuste
+                padding: 10px; // Reduce el padding
+                ul {
+                    li {
+                        width: 100%; // Aumenta el ancho de los enlaces
+                        margin: 5px 0; // Ajusta el margen
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin mediaHeaderVertical($min-width, $max-width) {
+    @media (min-width: $min-width) and (max-width: $max-width) {
+        .header-container {
+            @include flexCenter(column, center, center);
+            height: auto; // Permite que la altura se ajuste al contenido
+            
+            .header-image {
+                padding: 10px; // Reduce el padding
+                img {
+                    width: 150px; // Ajusta el tamaño de la imagen
+                    height: 150px; // Ajusta la altura de la imagen
+                }
+            }
+            .header-titulo {
+                width: 90%; // Ajusta el ancho
+                height: auto; // Permite que la altura se ajuste al contenido
+                background-image: none;
+                box-shadow: none;
+                h1 {
+                    padding-top: 20px; // Ajusta el padding
+                    font-size: 1.5rem; // Ajusta el tamaño de fuente
+                }
+            }
+
+            .header-nav {
+                width: 100%; // Ocupa el ancho completo
+                height: auto; // Permite que la altura se ajuste
+                padding: 10px; // Reduce el padding
+                ul {
+                    li {
+                        width: 100%; // Aumenta el ancho de los enlaces
+                        margin: 5px 0; // Ajusta el margen
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Mixin para header horizontal
+@mixin mediaHeaderHorizontal($min-width, $max-width) {
+    @media (min-width: $min-width) and (max-width: $max-width) {
+        .header-container {
+            @include flexCenter(row, space-between, center);
+            // Otros estilos específicos para horizontal
+        }
+    }
+}
+
+@mixin mediaFooterMobile($min, $max){
+    @media (min-width:$min) and (max-width:$max) {
+        .footer-container{
+            display: flex;
+            flex-direction: column;
+        }
+        .footer-parrafo{
+            p{
+                font-size: 0.6rem;
+                text-align: center;
+            }
+        }
+        .footer-social-icon{
+            img{
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+// Mixin para footer vertical
+@mixin mediaFooterVertical($min-width, $max-width) {
+    @media (min-width: $min-width) and (max-width: $max-width) {
+        .footer-container {
+            display: flex;
+            flex-direction: column; // Cambia a columna
+            // Otros estilos específicos para footer vertical
+        }
+    }
+}
+
+// Mixin para footer horizontal
+@mixin mediaFooterHorizontal($min-width, $max-width) {
+    @media (min-width: $min-width) and (max-width: $max-width) {
+        .footer-container {
+            display: flex;
+            flex-direction: row; // Mantiene la dirección horizontal
+            // Otros estilos específicos para footer horizontal
+        }
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; 
+}
+
+.header-container{
+    @include flexCenter(row, space-between, center);
+    background-color: $quinary-color;
+    .header-image{
+        padding: 20px;
+        img{
+            width: 200px;
+            height: 200px;
+            border-radius: 19px;
+            box-shadow: 5px 5px 10px rgba(217, 178, 106, 0.5);
+            border: none;
+        }
+    }
+    .header-titulo{
+        width: 500px;
+        height: 180px;
+        background-image: url(../assets/img/loud.jpg);
+        border-radius: 19px;
+        box-shadow: 5px 5px 10px rgba(217, 178, 106, 0.5);
+        h1{
+            padding-top: 75px;
+            text-align: center;
+            color: #D9B26A;
+        }
+    }
+    .header-nav{
+        @include flexCenter(column, space-around, center);
+        width: 200px;
+        height: 200px;
+        padding-top: 5px;
+        padding-right: 10px;
+        ul{
+            list-style-type: none;
+            li{
+                width: 140px;
+                margin: 5px auto;
+                padding: 3px;
+                border: 1px solid $secondary-color;
+                border-radius: 5px;
+                font-size: 1rem;
+                text-align: center;
+                transition: background-color 0.4s, color 0.4s;
+                &:hover {
+                    background-color: #734C48;
+                    border: 1px solid $primary-color; 
+                    color: #D9B26A; 
+                }
+                a{
+                    text-decoration: none;
+                    color: $secondary-color;
+                    display: block;
+                    &:hover {
+                        background-color: #734C48; 
+                        color: #D9B26A; 
+                    }
+                }
+            }
+        }
+    }
+}
+@include mediaHeaderMobile(300px, 480px);
+@include mediaHeaderVertical(481px, 768px);
+@include mediaFooterHorizontal(769px, 1024px);
+
+.footer-container{
+    @include flexCenter(row, space-between, center);
+    width: 100vw;
+    height: auto;
+    background-color: $quinary-color;
+    color: $primary-color;
+    .footer-parrafo{
+        p{
+            padding-top: 10px;
+        }
+        font-size: 1.0rem;
+        margin-left: 20px;
+    }
+        .footer-social-icon{
+        @include flexCenter(row, space-evenly, center);
+        margin-right: 20px;
+        img{
+            padding: 5px;
+            width: 45px;
+             height: 45px;
+        }
+    }
+    @include mediaFooterMobile(300px, 480px);
+}
+
+
+
+

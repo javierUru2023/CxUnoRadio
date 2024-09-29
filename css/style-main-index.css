@@ -1,0 +1,47 @@
+@charset "UTF-8";
+body {
+  background-image: url(../assets/img/gold-gradient-main.jpg);
+  font-family: "Roboto", sans-serif;
+}
+
+h4 {
+  color: #730202;
+  text-align: center;
+}
+
+.carousel-inner {
+  border-radius: 15px;
+}
+
+.img-fluid {
+  border-radius: 15px;
+}
+
+/* Estilo para el fondo del modal */
+#playerModal .modal-content {
+  background-image: url(../assets/img/ecualizador.gif); /* Cambia esta ruta */
+  background-size: cover; /* Ajusta el tamaño de la imagen */
+  background-repeat: no-repeat; /* Evita que se repita */
+  background-color: transparent; /* Asegúrate de que el fondo sea transparente */
+  border: none; /* Elimina el borde si es necesario */
+  color: white; /* Cambia el color del texto si es necesario */
+}
+
+/* Para el header del modal, si también quieres que tenga fondo transparente */
+#playerModal .modal-header {
+  background: transparent; /* Fondo transparente */
+  border: none; /* Sin borde */
+}
+
+/* Para el footer del modal, si quieres que también sea transparente */
+#playerModal .modal-footer {
+  background: transparent; /* Fondo transparente */
+  border: none; /* Sin borde */
+}
+
+/* Estilo para el fondo de la ventana modal */
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semi-transparente si deseas */
+}
+
+/*# sourceMappingURL=style-main-index.css.map */
