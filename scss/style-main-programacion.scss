@@ -1,0 +1,29 @@
+$primary-color: #D9B26A;
+$secondary-color: #730202;
+$tertiary-color: #400101;
+$quaternary-color: #260101;
+$quinary-color: #0D0D0D;
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.main-container{
+    width: 100vw;
+    height: auto;
+    background-image: url(../assets/img/gold-gradient-main.jpg);
+    background-size: cover;
+    padding-top: 10px;
+}
+
+.card mb-4{
+    border-radius: 15px;
+}
+
+.card {
+    border: 2px solid $secondary-color;
+    border-color: $secondary-color;
+}
