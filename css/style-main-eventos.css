@@ -1,0 +1,133 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+  background-image: url(../assets/img/gold-gradient-main.jpg);
+  background-size: cover;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.main-container .card {
+  width: 28vw;
+  border-color: #D9B26A;
+}
+.main-container .card .card-img-top {
+  height: 58vh;
+}
+.main-container .card h5 {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #D9B26A;
+}
+.main-container .card p {
+  font-size: 0.7rem;
+  text-align: justify;
+  color: #400101;
+}
+
+@media (min-width: 300px) and (max-width: 480px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    width: 100vw;
+    height: auto;
+    background-image: url(../assets/img/gold-gradient-main.jpg);
+    background-size: cover;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .main-container .card {
+    width: 90vw;
+    border-color: #D9B26A;
+  }
+  .main-container .card .card-img-top {
+    height: 58vh;
+  }
+  .main-container .card h5 {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #D9B26A;
+  }
+  .main-container .card p {
+    font-size: 0.7rem;
+    text-align: justify;
+    color: #400101;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    width: 100vw;
+    height: auto;
+    background-image: url(../assets/img/gold-gradient-main.jpg);
+    background-size: cover;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .main-container .card {
+    width: 90vw;
+    border-color: #D9B26A;
+  }
+  .main-container .card .card-img-top {
+    height: 58vh;
+  }
+  .main-container .card h5 {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #D9B26A;
+  }
+  .main-container .card p {
+    font-size: 0.7rem;
+    text-align: justify;
+    color: #400101;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    width: 100vw;
+    height: auto;
+    background-image: url(../assets/img/gold-gradient-main.jpg);
+    background-size: cover;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .main-container .card {
+    width: 90vw;
+    border-color: #D9B26A;
+  }
+  .main-container .card .card-img-top {
+    height: 58vh;
+  }
+  .main-container .card h5 {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #D9B26A;
+  }
+  .main-container .card p {
+    font-size: 0.7rem;
+    text-align: justify;
+    color: #400101;
+  }
+}
+
+/*# sourceMappingURL=style-main-eventos.css.map */

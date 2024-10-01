@@ -1,0 +1,159 @@
+$primary-color: #D9B26A;
+$secondary-color: #730202;
+$tertiary-color: #400101;
+$quaternary-color: #260101;
+$quinary-color: #0D0D0D;
+
+@mixin mediaMainMobile($min-width, $max-width) {
+    @media (min-width: $min-width) and (max-width: $max-width) {
+
+        .main-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 10px;
+            width: 100vw;
+            height: auto;
+            background-image: url(../assets/img/gold-gradient-main.jpg);
+            background-size: cover;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            .card{
+                width: 90vw;
+                border-color: $primary-color;
+                .card-img-top{
+                    height: 58vh;
+                }
+                h5{
+                    font-size: 0.9rem;
+                    font-weight: bold;
+                    color: $primary-color;
+                }
+                p{
+                    font-size: 0.7rem;
+                    text-align: justify;
+                    color: $tertiary-color;
+                }
+            }    
+        
+        }
+        
+    }
+}
+
+@mixin mediaMainVertical($min-width, $max-width) {
+    @media (min-width: $min-width) and (max-width: $max-width) {
+
+        .main-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 10px;
+            width: 100vw;
+            height: auto;
+            background-image: url(../assets/img/gold-gradient-main.jpg);
+            background-size: cover;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            .card{
+                width: 90vw;
+                border-color: $primary-color;
+                .card-img-top{
+                    height: 58vh;
+                }
+                h5{
+                    font-size: 0.9rem;
+                    font-weight: bold;
+                    color: $primary-color;
+                }
+                p{
+                    font-size: 0.7rem;
+                    text-align: justify;
+                    color: $tertiary-color;
+                }
+            }    
+        
+        }
+        
+    }
+}
+
+@mixin mediaMainHorizontal($min-width, $max-width) {
+    @media (min-width: $min-width) and (max-width: $max-width) {
+
+        .main-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 10px;
+            width: 100vw;
+            height: auto;
+            background-image: url(../assets/img/gold-gradient-main.jpg);
+            background-size: cover;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            .card{
+                width: 90vw;
+                border-color: $primary-color;
+                .card-img-top{
+                    height: 58vh;
+                }
+                h5{
+                    font-size: 0.9rem;
+                    font-weight: bold;
+                    color: $primary-color;
+                }
+                p{
+                    font-size: 0.7rem;
+                    text-align: justify;
+                    color: $tertiary-color;
+                }
+            }    
+        
+        }
+        
+    }
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+    background-image: url(../assets/img/gold-gradient-main.jpg);
+    background-size: cover;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    .card{
+        width: 28vw;
+        border-color: $primary-color;
+        .card-img-top{
+            height: 58vh;
+        }
+        h5{
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: $primary-color;
+        }
+        p{
+            font-size: 0.7rem;
+            text-align: justify;
+            color: $tertiary-color;
+        }
+    }    
+
+}
+
+@include mediaMainMobile(300px, 480px);
+@include mediaMainVertical(481px, 768px);
+@include mediaMainHorizontal(769px, 1024px);

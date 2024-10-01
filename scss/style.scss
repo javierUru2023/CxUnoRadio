@@ -150,12 +150,14 @@ $quinary-color: #0D0D0D;
     box-sizing: border-box;
 }
 
-body {
+html, body {
+    overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
 }
 
 .header-container{
     @include flexCenter(row, space-between, center);
+    width: 100vw;
     background-color: $quinary-color;
     padding: 20px;
     .header-image{
