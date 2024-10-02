@@ -3,6 +3,8 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  color: #400101;
+  border-color: #D9B26A;
 }
 
 .main-container {

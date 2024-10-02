@@ -19,26 +19,32 @@ $quinary-color: #0D0D0D;
             justify-content: center;
             align-items: center;
             height: auto;
+            padding-top: 10px;
+            padding-bottom: 10px;
             .carousel-container{
                 width: 80vw;
-                padding-top: 20px;
-                padding-right: 45px;
-                padding-bottom: 20px;
+                .main-container-titulo{
+                    h5{
+                        text-align: center;
+                        color: $tertiary-color;
+                        font-size: 0.8rem;
+                    }
+                }
                 .carousel-inner{
                     border-radius: 10px;
                 }
+                padding-bottom: 10px;
             }
             .radio-container{
                 width: 80vw;
-                padding-right: 45px;
-                padding-bottom: 20px;
+                .main-container-titulo{
+                    text-align: center;
+                    color: $tertiary-color;
+                    font-size: 0.8rem;
+                }
                 .radio-imagen{
-                    h5{
-                        font-size: 0.8rem;
-                        text-align: center;
-                    }
                     img{
-                        width: 48vw;
+                        width: 80vw;
                         border-radius: 10px;
                     }
                 }
@@ -49,69 +55,138 @@ $quinary-color: #0D0D0D;
 
 @mixin mediaMainVertical($min-width, $max-width) {
     @media (min-width: $min-width) and (max-width: $max-width) {
+        
         .main-container{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             height: auto;
+            padding-top: 20px;
+            padding-bottom: 20px;
             .carousel-container{
                 width: 80vw;
-                padding-top: 20px;
-                padding-right: 45px;
+                height: auto;
                 padding-bottom: 20px;
+                .main-container-titulo{
+                    h5{
+                        text-align: center;
+                        color: $tertiary-color;
+                        font-size: 1.2rem;
+                    }
+                }
                 .carousel-inner{
-                    border-radius: 10px;
+                    border-radius: 15px;
+                    border-color: $primary-color;
                 }
             }
             .radio-container{
-                width: 80vw;
-                padding-right: 45px;
-                padding-bottom: 20px;
+                padding-top: 10px;
+                .main-container-titulo{
+                    text-align: center;
+                    color: $tertiary-color;
+                    font-size: 1.2rem;
+                }
                 .radio-imagen{
-                    h5{
-                        font-size: 0.8rem;
-                        text-align: center;
-                    }
                     img{
-                        width: 58vw;
-                        border-radius: 10px;
+                        width: 80vw;
+                        border-radius: 15px;
+                        border-color: $primary-color;
                     }
                 }
             }
         }
+
     }
 }
 
 @mixin mediaMainHorizontal($min-width, $max-width) {
     @media (min-width: $min-width) and (max-width: $max-width) {
+        
         .main-container{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             height: auto;
+            padding-top: 30px;
+            padding-bottom: 30px;
             .carousel-container{
                 width: 80vw;
-                padding-top: 20px;
-                padding-right: 45px;
-                padding-bottom: 20px;
+                height: auto;
+                padding-bottom: 30px;
+                .main-container-titulo{
+                    h5{
+                        text-align: center;
+                        color: $tertiary-color;
+                        font-size: 1.5rem;
+                    }
+                }
                 .carousel-inner{
-                    border-radius: 10px;
+                    border-radius: 15px;
+                    border-color: $primary-color;
                 }
             }
             .radio-container{
-                width: 80vw;
-                padding-right: 45px;
-                padding-bottom: 20px;
+                padding-top: 20px;
+                .main-container-titulo{
+                    text-align: center;
+                    color: $tertiary-color;
+                    font-size: 1.5rem;
+                }
                 .radio-imagen{
-                    h5{
-                        font-size: 1.5rem;
-                        text-align: center;
-                    }
                     img{
-                        width: 66vw;
-                        border-radius: 10px;
+                        width: 80vw;
+                        border-radius: 15px;
+                        border-color: $primary-color;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@mixin mediaMainPanoramic($min-width) {
+    @media (min-width) {
+        
+        .main-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100vw;
+            height: auto;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-image: url(../assets/img/gold-gradient-main.jpg);
+            background-size: cover;
+            .carousel-container{
+                width: 40vw;
+                height: auto;
+                .main-container-titulo{
+                    h5{
+                        text-align: center;
+                        color: $tertiary-color;
+                        font-size: 0.8rem;
+                    }
+                }
+                .carousel-inner{
+                    border-radius: 15px;
+                    border-color: $primary-color;
+                }
+            }
+            .radio-container{
+                .main-container-titulo{
+                    text-align: center;
+                    color: $tertiary-color;
+                    font-size: 1.5rem;
+                }
+                .radio-imagen{
+                    img{
+                        width: 80vw;
+                        border-radius: 15px;
+                        border-color: $primary-color;
                     }
                 }
             }
@@ -132,26 +207,37 @@ body{
     justify-content: space-evenly;
     align-items: center;
     width: 100vw;
-    height: 52vh;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-image: url(../assets/img/gold-gradient-main.jpg);
     background-size: cover;
     .carousel-container{
-        width: 30vw;
-        padding-left: 40px;
+        width: 40vw;
+        height: auto;
+        .main-container-titulo{
+            h5{
+                text-align: center;
+                color: $tertiary-color;
+                font-size: 1.5rem;
+            }
+        }
         .carousel-inner{
             border-radius: 15px;
+            border-color: $primary-color;
         }
     }
     .radio-container{
-        width: 30vw;
-        padding-left: 50px;
+        .main-container-titulo{
+            text-align: center;
+            color: $tertiary-color;
+            font-size: 1.5rem;
+        }
         .radio-imagen{
-            h5{
-                text-align: center;
-            }
             img{
-                width: 26vw;
+                width: 30vw;
                 border-radius: 15px;
+                border-color: $primary-color;
             }
         }
     }
@@ -160,5 +246,4 @@ body{
 @include mediaMainMobile(300px, 480px);
 @include mediaMainVertical(481px, 768px);
 @include mediaMainHorizontal(769px, 1024px);
-
-
+@include mediaMainPanoramic(1025px);

@@ -1,0 +1,127 @@
+$primary-color: #D9B26A;
+$secondary-color: #730202;
+$tertiary-color: #400101;
+$quaternary-color: #260101;
+$quinary-color: #0D0D0D;
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: $primary-color;
+}
+
+.news-blog {
+    max-width: 800px;
+    margin: 20px auto 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-blog h2 {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.news-item {
+    background: #f1f1f1;
+    border-radius: 8px;
+    padding: 15px;
+    transition: background 0.3s;
+}
+
+.news-item:hover {
+    background: #e0e0e0;
+}
+
+.news-item h3 {
+    margin: 0;
+}
+
+.news-item p {
+    margin: 5px 0;
+}
+
+.news-item a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.news-item a:hover {
+    text-decoration: underline;
+}
+
+.newsletter {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f1f1f1;
+    border-radius: 8px;
+}
+
+.newsletter input {
+    margin: 5px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+.newsletter button {
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter input,
+    .newsletter button {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .newsletter input,
+    .newsletter button {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .newsletter input,
+    .newsletter button {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .newsletter input,
+    .newsletter button {
+        font-size: 16px;
+    }
+}

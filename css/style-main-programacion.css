@@ -13,13 +13,17 @@ body {
   padding-top: 10px;
 }
 
+.card-body {
+  color: #400101;
+}
+
 .card mb-4 {
   border-radius: 15px;
 }
 
 .card {
   border: 2px solid #730202;
-  border-color: #730202;
+  border-color: #D9B26A;
 }
 
 /*# sourceMappingURL=style-main-programacion.css.map */

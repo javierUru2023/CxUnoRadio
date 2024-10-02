@@ -19,11 +19,15 @@ body{
     padding-top: 10px;
 }
 
+.card-body{
+    color: $tertiary-color;
+}
+
 .card mb-4{
     border-radius: 15px;
 }
 
 .card {
     border: 2px solid $secondary-color;
-    border-color: $secondary-color;
+    border-color: $primary-color;
 }
