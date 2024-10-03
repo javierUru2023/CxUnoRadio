@@ -4,30 +4,52 @@ $tertiary-color: #400101;
 $quaternary-color: #260101;
 $quinary-color: #0D0D0D;
 
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif; 
 }
 
-.main-container{
+.main-container {
     width: 100vw;
     height: auto;
     background-image: url(../assets/img/gold-gradient-main.jpg);
     background-size: cover;
     padding-top: 10px;
-}
+    transition: background-color 0.3s ease; // Transición para el fondo
 
-.card-body{
-    color: $tertiary-color;
-}
-
-.card mb-4{
-    border-radius: 15px;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.8); // Cambio de fondo al pasar el ratón
+    }
 }
 
 .card {
     border: 2px solid $secondary-color;
     border-color: $primary-color;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; // Transición para efectos de hover
+
+    &:hover {
+        transform: translateY(-5px); // Elevar la tarjeta
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); // Añadir sombra
+    }
+}
+
+.card-body {
+    color: $tertiary-color;
+
+    // Efecto en los títulos al pasar el ratón
+    .card-title {
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $primary-color; // Cambiar color del título al hacer hover
+        }
+    }
+}
+
+
+.card.mb-4 {
+    margin-bottom: 1.5rem; 
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style-main-index.css">
     <link rel="icon" href="./assets/img/faviconCxUno.png" type="image/x-icon">
-    <title>cxuno-radio-inicio</title>
+    <title>CxUno Radio - Inicio</title>
+    <meta name="description" content="Escucha la mejor música del mundo en CxUno Radio. Disfruta de programas y eventos en vivo.">
+    <meta name="keywords" content="CxUno, radio, música, streaming, eventos, programación">
 </head>
 <body>
     <header class="header-container">
@@ -91,7 +93,7 @@
           <h5 class="main-container-titulo">Escucha en vivo!!</h5>
         </div>
         <div class="radio-imagen">
-          <a href="./pages/reproductor.html" target="_blank"><img src="./assets/img/EscuchaEnVivo.jpg" alt="Escucha en vivo"></a>
+          <a href="./pages/reproductor.html" onclick="openPlayer(); return false;"><img src="./assets/img/EscuchaEnVivo.jpg" alt="Escucha en vivo"></a>
         </div>
       </div>
     </main>
@@ -110,6 +112,11 @@
             </div>
         </div>
     </footer>
+    <script>
+      function openPlayer() {
+          window.open('./pages/reproductor.html', '_blank', 'width=300,height=300');
+      }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 </body>

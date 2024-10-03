@@ -15,8 +15,8 @@ html, body {
   justify-content: space-between;
   align-items: center;
   width: 100vw;
+  padding: 10px 10px 10px 10px;
   background-color: #0D0D0D;
-  padding: 20px;
 }
 .header-container .header-image img {
   width: 200px;
@@ -81,9 +81,6 @@ html, body {
     align-items: center;
     height: auto;
   }
-  .header-container .header-image {
-    padding: 10px;
-  }
   .header-container .header-image img {
     width: 150px;
     height: 150px;
@@ -126,7 +123,7 @@ html, body {
     height: 150px;
   }
   .header-container .header-titulo {
-    width: 90%;
+    width: 80%;
     height: auto;
     background-image: none;
     box-shadow: none;

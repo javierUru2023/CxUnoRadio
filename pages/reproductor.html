@@ -3,36 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reproductor de CxUno Radio. Escucha tu música y programas favoritos en línea.">
+    <meta name="keywords" content="CxUno, radio, música, streaming, online">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="../assets/img/faviconCxUno.png" type="image/x-icon">
     <title>Reproductor CxUno</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-image: url(../assets/img/ecualizador.gif);
-            background-size:cover;
-            background-repeat: no-repeat;
+    <link rel="stylesheet" href="../css/style-reproductor.css"> 
+    <script>
+        function openPlayer() {
+            window.open('https://stream.zeno.fm/fasg5w19rm0uv', '_blank', 'width=300,height=300');
         }
-        iframe {
-            width: 400px;
-            height: 180px;
-            border: none; /* Sin borde */
-    
-        }
-    </style>
+    </script>
 </head>
 <body>
     <div>
-        <img src="../assets/img/logoCxUno.png" alt="Logo cxuno radio" width="150px" height="150px">
+        <img src="../assets/img/logoCxUno.png" alt="Logo cxuno radio" width="150" height="150">
     </div>
     <div>
-        <iframe src="https://stream.zeno.fm/fasg5w19rm0uv" allow="autoplay">
-        </iframe>
+        <iframe src="https://stream.zeno.fm/fasg5w19rm0uv" allow="autoplay"></iframe>
     </div>
 </body>
 </html>

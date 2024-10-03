@@ -16,10 +16,9 @@ $quinary-color: #0D0D0D;
     @media (min-width: $min-width) and (max-width: $max-width) {
         .header-container {
             @include flexCenter(column, center, center);
-            height: auto; // Permite que la altura se ajuste al contenido
+            height: auto;
 
             .header-image {
-                padding: 10px; // Reduce el padding
                 img {
                     width: 150px; // Reduce el tamaño de la imagen
                     height: 150px; // Reduce la altura de la imagen
@@ -66,7 +65,7 @@ $quinary-color: #0D0D0D;
                 }
             }
             .header-titulo {
-                width: 90%; // Ajusta el ancho
+                width: 80%; // Ajusta el ancho
                 height: auto; // Permite que la altura se ajuste al contenido
                 background-image: none;
                 box-shadow: none;
@@ -158,8 +157,8 @@ html, body {
 .header-container{
     @include flexCenter(row, space-between, center);
     width: 100vw;
+    padding: 10px 10px 10px 10px;
     background-color: $quinary-color;
-    padding: 20px;
     .header-image{
         img{
             width: 200px;

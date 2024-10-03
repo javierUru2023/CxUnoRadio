@@ -1,0 +1,52 @@
+$background-image: url(../assets/img/ecualizador.gif);
+$logo-width: 90px;
+$iframe-width: 70vw;
+$iframe-height: 35vh;
+
+// Estilos generales
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: $background-image;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+
+    img {
+        width: $logo-width;
+        height: auto;
+        padding-bottom: 5px;
+    }
+
+    iframe {
+        width: $iframe-width;
+        height: $iframe-height;
+        border: none; // Sin borde
+    }
+}
+
+// Media Queries
+@media (max-width: 480px) {
+    iframe {
+        width: 100%; // Adaptar a 100% en pantallas más pequeñas
+        height: auto; // Ajustar altura automáticamente
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    iframe {
+        width: 80%; // Un poco más pequeño
+        height: auto;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    iframe {
+        width: 70%; // Más pequeño aún
+        height: auto;
+    }
+}

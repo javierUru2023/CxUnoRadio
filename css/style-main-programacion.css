@@ -11,19 +11,35 @@ body {
   background-image: url(../assets/img/gold-gradient-main.jpg);
   background-size: cover;
   padding-top: 10px;
+  transition: background-color 0.3s ease;
 }
-
-.card-body {
-  color: #400101;
-}
-
-.card mb-4 {
-  border-radius: 15px;
+.main-container:hover {
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .card {
   border: 2px solid #730202;
   border-color: #D9B26A;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  color: #400101;
+}
+.card-body .card-title {
+  transition: color 0.3s ease;
+}
+.card-body .card-title:hover {
+  color: #D9B26A;
+}
+
+.card.mb-4 {
+  margin-bottom: 1.5rem;
 }
 
 /*# sourceMappingURL=style-main-programacion.css.map */
