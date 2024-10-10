@@ -14,7 +14,7 @@ $quinary-color: #0D0D0D;
             row-gap: 10px;
             width: 100vw;
             height: auto;
-            background-image: url(../assets/img/gold-gradient-main.jpg);
+            background-image: url(../assets/img/gold-gradient-main.webp);
             background-size: cover;
             padding-top: 25px;
             padding-bottom: 25px;
@@ -51,7 +51,7 @@ $quinary-color: #0D0D0D;
             row-gap: 10px;
             width: 100vw;
             height: auto;
-            background-image: url(../assets/img/gold-gradient-main.jpg);
+            background-image: url(../assets/img/gold-gradient-main.webp);
             background-size: cover;
             padding-top: 25px;
             padding-bottom: 25px;
@@ -88,7 +88,7 @@ $quinary-color: #0D0D0D;
             row-gap: 10px;
             width: 100vw;
             height: auto;
-            background-image: url(../assets/img/gold-gradient-main.jpg);
+            background-image: url(../assets/img/gold-gradient-main.webp);
             background-size: cover;
             padding-top: 25px;
             padding-bottom: 25px;
@@ -130,7 +130,7 @@ html, body{
     width: 100vw;
     height: auto;
     overflow-x: hidden;
-    background-image: url(../assets/img/gold-gradient-main.jpg);
+    background-image: url(../assets/img/gold-gradient-main.webp);
     background-size: cover;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -149,6 +149,14 @@ html, body{
             font-size: 0.7rem;
             text-align: justify;
             color: $tertiary-color;
+        }
+        .btn-primary{
+            border-color: $secondary-color;
+            background-color: $secondary-color;
+            &:hover{
+                border-color: $primary-color;
+                background-color: $primary-color;
+            }
         }
     }    
 

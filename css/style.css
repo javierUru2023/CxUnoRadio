@@ -28,7 +28,7 @@ html, body {
 .header-container .header-titulo {
   width: 500px;
   height: 180px;
-  background-image: url(../assets/img/loud.jpg);
+  background-image: url(../assets/img/loud.webp);
   border-radius: 19px;
   box-shadow: 5px 5px 10px rgba(217, 178, 106, 0.5);
 }
@@ -52,24 +52,24 @@ html, body {
   width: 140px;
   margin: 5px auto;
   padding: 3px;
-  border: 1px solid #730202;
+  border: 1px solid #D9B26A;
   border-radius: 5px;
   font-size: 1rem;
   text-align: center;
   transition: background-color 0.4s, color 0.4s;
 }
 .header-container .header-nav ul li:hover {
-  background-color: #734C48;
-  border: 1px solid #D9B26A;
+  background-color: #730202;
+  border: 1px solid #730202;
   color: #D9B26A;
 }
 .header-container .header-nav ul li a {
   text-decoration: none;
-  color: #730202;
+  color: #D9B26A;
   display: block;
 }
 .header-container .header-nav ul li a:hover {
-  background-color: #734C48;
+  background-color: #730202;
   color: #D9B26A;
 }
 

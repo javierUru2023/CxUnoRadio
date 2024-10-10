@@ -10,7 +10,7 @@ body {
     color: $tertiary-color;
     margin: 0;
     padding: 0;
-    background-color: $primary-color;
+    background-image: url(../assets/img/gold-gradient-main.webp);
 }
 
 .news-blog {
@@ -51,7 +51,7 @@ body {
     }
 
     a {
-        color: #007BFF;
+        color: $quinary-color;
         text-decoration: none;
 
         &:hover {
@@ -74,7 +74,7 @@ body {
 
     button {
         padding: 10px;
-        background: #007BFF;
+        background: $quinary-color;
         color: white;
         border: none;
         border-radius: 5px;

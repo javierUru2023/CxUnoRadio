@@ -14,7 +14,7 @@ body {
   height: auto;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-image: url(../assets/img/gold-gradient-main.jpg);
+  background-image: url(../assets/img/gold-gradient-main.webp);
   background-size: cover;
 }
 .main-container .carousel-container {
@@ -24,7 +24,7 @@ body {
 .main-container .carousel-container .main-container-titulo h5 {
   text-align: center;
   color: #400101;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .main-container .carousel-container .carousel-inner {
   border-radius: 15px;
@@ -33,7 +33,7 @@ body {
 .main-container .radio-container .main-container-titulo {
   text-align: center;
   color: #400101;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .main-container .radio-container .radio-imagen img {
   width: 30vw;
@@ -162,7 +162,7 @@ body {
     height: auto;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-image: url(../assets/img/gold-gradient-main.jpg);
+    background-image: url(../assets/img/gold-gradient-main.webp);
     background-size: cover;
   }
   .main-container .carousel-container {

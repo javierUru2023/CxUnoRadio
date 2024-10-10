@@ -16,7 +16,16 @@ body{
 .main-container{
     width: 100vw;
     height: auto;
-    background-image: url(../assets/img/gold-gradient-main.jpg);
+    background-image: url(../assets/img/gold-gradient-main.webp);
     background-size: cover;
     padding: 20px 0 20px 0;
+}
+
+.btn-primary {
+    border-color: $quinary-color;
+    background-color: $quinary-color;
+    &:hover{
+        border-color: $secondary-color;
+        background-color: $secondary-color;
+    }
 }

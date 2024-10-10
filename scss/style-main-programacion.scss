@@ -14,25 +14,25 @@ body {
 .main-container {
     width: 100vw;
     height: auto;
-    background-image: url(../assets/img/gold-gradient-main.jpg);
+    background-image: url(../assets/img/gold-gradient-main.webp);
     background-size: cover;
     padding-top: 10px;
     transition: background-color 0.3s ease; // Transición para el fondo
 
     &:hover {
-        background-color: rgba(255, 255, 255, 0.8); // Cambio de fondo al pasar el ratón
+        background-color: rgba(29, 28, 28, 0.8); // Cambio de fondo al pasar el ratón
     }
 }
 
 .card {
     border: 2px solid $secondary-color;
     border-color: $primary-color;
-    border-radius: 15px;
+    border-radius: 5px;
     transition: transform 0.3s ease, box-shadow 0.3s ease; // Transición para efectos de hover
 
     &:hover {
         transform: translateY(-5px); // Elevar la tarjeta
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); // Añadir sombra
+        box-shadow: 0 4px 20px rgba(255, 7, 7, 0.2); // Añadir sombra
     }
 }
 

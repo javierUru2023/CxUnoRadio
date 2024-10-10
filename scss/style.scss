@@ -171,7 +171,7 @@ html, body {
     .header-titulo{
         width: 500px;
         height: 180px;
-        background-image: url(../assets/img/loud.jpg);
+        background-image: url(../assets/img/loud.webp);
         border-radius: 19px;
         box-shadow: 5px 5px 10px rgba(217, 178, 106, 0.5);
         h1{
@@ -190,23 +190,23 @@ html, body {
                 width: 140px;
                 margin: 5px auto;
                 padding: 3px;
-                border: 1px solid $secondary-color;
+                border: 1px solid $primary-color;
                 border-radius: 5px;
                 font-size: 1rem;
                 text-align: center;
                 transition: background-color 0.4s, color 0.4s;
                 &:hover {
-                    background-color: #734C48;
-                    border: 1px solid $primary-color; 
+                    background-color: $secondary-color;
+                    border: 1px solid $secondary-color; 
                     color: #D9B26A; 
                 }
                 a{
                     text-decoration: none;
-                    color: $secondary-color;
+                    color: $primary-color;
                     display: block;
                     &:hover {
-                        background-color: #734C48; 
-                        color: #D9B26A; 
+                        background-color: $secondary-color; 
+                        color: $primary-color; 
                     }
                 }
             }

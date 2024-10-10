@@ -13,7 +13,7 @@ html, body {
   width: 100vw;
   height: auto;
   overflow-x: hidden;
-  background-image: url(../assets/img/gold-gradient-main.jpg);
+  background-image: url(../assets/img/gold-gradient-main.webp);
   background-size: cover;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -35,6 +35,14 @@ html, body {
   text-align: justify;
   color: #400101;
 }
+.main-container .card .btn-primary {
+  border-color: #730202;
+  background-color: #730202;
+}
+.main-container .card .btn-primary:hover {
+  border-color: #D9B26A;
+  background-color: #D9B26A;
+}
 
 @media (min-width: 300px) and (max-width: 480px) {
   .main-container {
@@ -44,7 +52,7 @@ html, body {
     row-gap: 10px;
     width: 100vw;
     height: auto;
-    background-image: url(../assets/img/gold-gradient-main.jpg);
+    background-image: url(../assets/img/gold-gradient-main.webp);
     background-size: cover;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -75,7 +83,7 @@ html, body {
     row-gap: 10px;
     width: 100vw;
     height: auto;
-    background-image: url(../assets/img/gold-gradient-main.jpg);
+    background-image: url(../assets/img/gold-gradient-main.webp);
     background-size: cover;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -106,7 +114,7 @@ html, body {
     row-gap: 10px;
     width: 100vw;
     height: auto;
-    background-image: url(../assets/img/gold-gradient-main.jpg);
+    background-image: url(../assets/img/gold-gradient-main.webp);
     background-size: cover;
     padding-top: 25px;
     padding-bottom: 25px;

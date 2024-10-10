@@ -10,9 +10,18 @@ body {
 .main-container {
   width: 100vw;
   height: auto;
-  background-image: url(../assets/img/gold-gradient-main.jpg);
+  background-image: url(../assets/img/gold-gradient-main.webp);
   background-size: cover;
   padding: 20px 0 20px 0;
+}
+
+.btn-primary {
+  border-color: #0D0D0D;
+  background-color: #0D0D0D;
+}
+.btn-primary:hover {
+  border-color: #730202;
+  background-color: #730202;
 }
 
 /*# sourceMappingURL=style-main-contacto.css.map */
